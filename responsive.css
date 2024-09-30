@@ -1,0 +1,121 @@
+@media(max-width:1024px){
+    /*About Section */
+
+}
+@media(max-width:991px){
+    /*custom classes*/
+    .text-conten{
+        width: 100%;
+    }
+    .container-25{
+     
+        flex-direction: row;
+        align-items: flex-start;
+      
+     
+    }
+
+     /*navbar brand*/
+     .navigation-wrap .navbar-brand img{
+
+         height: 3.812rem;
+     }
+     .navigation-wrap{
+        text-align: center;
+        background-color: white;
+
+     }
+     .navigation-wrap .nav-link{
+        line-height: 1.875rem;
+        
+     }
+     .col-md-3 {
+      width: auto;
+      height: auto;
+      margin: 40px;
+     
+     }
+
+
+      /*banner Design*/
+
+
+       /*carousel design*/
+}
+
+
+@media (max-width :767px){
+     /* Top bar responsiveness */
+
+    .container-25 {
+      flex-direction: row;
+      align-items: flex-start;
+    
+    }
+  
+    .nexgen-coders {
+      padding-left: 10px;
+      margin-bottom: 10px;
+    }
+  
+    container-21, .container-26, .container-8 {
+        display: flex;
+        align-items: center;
+        margin-right: 10px; /* Reduce margin between items */
+      }
+      
+      .container-21 {
+        margin-right: 10px;
+      }
+      
+      .container-26 {
+        margin-right: 10px;
+      }
+      
+      .container-8 {
+        margin-right: 10px;
+      }
+  
+    .line-1 {
+      display: none; /* Hide the line on smaller screens */
+    }
+  
+  
+
+    .ceo-section {
+        margin-top: 20px; /* Space for mobile view */
+      }
+      .col-md-3 {
+       width: auto;
+       height: auto;
+       margin: 50px;
+      
+      }
+     
+        .footer-content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+          .form-group {
+              flex-direction: row;
+              justify-content: space-between;
+          }
+        
+          label {
+              flex: 1;
+          }
+        
+          input[type="text"],
+          input[type="email"],
+          input[type="tel"],
+          textarea {
+              flex: 2;
+              margin-left: 10px;
+          }
+        
+          button {
+              margin-top: 10px;
+          }
+        
+}

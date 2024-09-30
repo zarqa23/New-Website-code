@@ -1,0 +1,778 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700;900&display=swap');
+
+/* Global Reset */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: var(--primary-color) ;
+}
+/* Variable Define */
+:root {
+    --primary-color: #0093CB;
+    --secondary-color: #FEFEFE;
+    --third-color: #1E1E1E;
+    --text-color: #272626;
+    --black-color: #000;
+    --white-color: #fff;
+    --primary-font: 'Roboto', 'sans-serif';
+    --secondary-font: 'Quicksand', 'sans-serif';
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+ 
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  background-color: #f8f9fa;
+  color: var(--third-color);
+}
+
+
+
+/*Top Bar*/
+/* Container for the top bar */
+.container-25 {
+    background-color: #0093CB; /* Light background color */
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+  }
+  
+  /* NEXGEN CODERS text */
+  .nexgen-coders {
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    padding-left: 15px;
+  }
+  
+  /* Vertical line after NEXGEN CODERS */
+.nexgen-coders::after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 25px;
+    background-color: white; /* White vertical line */
+    position: absolute;
+    right: 0;
+    top: 20%;
+    transform: translateY(-50%);
+  }
+  
+  /* Horizontal line below NEXGEN CODERS */
+  .line-1 {
+    background: #FFFFFF;
+    width: 37px;
+    height: 0px;
+  }
+  /* Container for location, phone, and email */
+  .container-21, .container-26, .container-8 {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  
+  /* Location, phone, and email icons */
+  .vector-10, .vector-8, .vector-9 {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  
+  /* Text styling for location */
+  .Lahore,Pakistan {
+    color: white;
+  }
+  
+  /* Text styling for phone numbers */
+  .container-26 .container {
+    color: white;
+  }
+  
+  /* Text styling for email */
+  .nexgencodersoutlook-com {
+    color: white;
+  }
+  
+ 
+  /* Additional styling for a navbar below */
+
+
+  .navigation-wrap{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition:all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .navigation-wrap.nav-item{
+    padding: 0 0.625rem;
+    transition: all 200ms linear;
+  }
+  .navbar-toggler:focus{
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+  }
+  .nav-link{
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: white;
+    letter-spacing: 1px;
+  }
+  .navigation-wrap.scroll-on{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f1f1f1;
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0,0,0.9);
+    transition: all .15s ease-in-out 0s;
+  }
+
+.navbar {
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0 6px 112px rgba(34, 34, 34, 0.2);
+  margin-top: 0;
+}
+.navbar-brand {
+    margin-left: 0;
+    /* Align logo to the right */
+  }
+
+.navbar-brand img {
+
+  height: 80;
+  
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+
+.nav-item a {
+  color: var(--text-color);
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.nav-item a:hover {
+  color: #0093CB;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  border-radius: 30px;
+  border: 2px dashed var(--primary-color);
+}
+
+.dropdown-menu a {
+  color: var(--text-color);
+}
+
+.form-inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-inline .form-control {
+    width: 250px;
+    padding: 10px;
+    border-radius: 50px; /* Makes it round */
+    border: 2px solid var(--text-color); /* Adds a border */
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .form-inline .form-control:focus {
+    border-color: #0093CB; /* Border color on focus */
+  }
+  
+  .form-inline .btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin-left: -40px; /* Adjust button position inside input */
+    cursor: pointer;
+    color: var(--text-color);
+  }
+  .navbar-btn img {
+    width: 24px; /* Adjust the size of the image */
+    height: 24px;
+    color: var(--text-color);
+    border-radius: 20%; /* Make the image round if needed */
+  }
+  
+  .form-inline .btn:hover {
+    color: #0093CB; /* Hover effect for button */
+  }
+
+/*-------TOP BANNER--------*/
+ .top-banner{
+  width: 100%;
+  background-color: white;     
+  margin-bottom: 50px;
+  padding: 16.875rem, 0 9.375rem;
+
+ }
+
+/* For WebKit Browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #0093CB; /* Color of the thumb (scroll handle) */
+    border-radius: 10px; /* Rounded corners for the thumb */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0072a8; /* Color of the thumb when hovered */
+  }
+  
+  /* For Firefox */
+  .scrollable-element {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: #9e9e9e #f1f1f1; /* Thumb and track color */
+  }
+  
+  /* For Edge */
+  .scrollable-element::-ms-scrollbar {
+    width: 12px;
+  }
+  
+  .scrollable-element::-ms-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .scrollable-element::-ms-scrollbar-thumb {
+    background: #434343;
+    border-radius: 10px;
+  }
+  
+  .scrollable-element::-ms-scrollbar-thumb:hover {
+    background: #808181;
+  }
+
+  .main-button {
+    background-color: transparent;
+    color: #0093CB;
+    font-family: Roboto;
+    font-weight: bold;
+    border: 2px dashed #0093CB;
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .main-button:hover {
+    background-color: #0093CB;
+    color: #fff;
+  }
+
+
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+    font-family: 'Roboto';
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    margin-top: auto;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: var(--text-color);
+    font-family: 'Roboto';
+    margin-top: 30px;
+    margin-bottom: 18px;
+  }
+  
+  h3 {
+    font-size: 2.5rem;
+    color: white;
+    font-family: Roboto;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  
+  h4 {
+    margin-top: 15px;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 14px;
+  }
+  
+  h5 {
+    font-size: 1.25rem;
+    color: #1E1E1E;
+    margin-bottom: 12px;
+  }
+  h6{
+    font-size: small;
+    color: #f1f1f1;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+
+  }
+  h7{
+    font-size: medium;
+    color: #f1f1f1;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Paragraphs */
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: var(--third-color);
+    line-height: 1.6;
+    margin: 0 0 15px;
+  }
+  
+  /* Main content area */
+  main {
+    padding: 20px;
+    background-color: #fff;
+    color: #1E1E1E;
+  }
+  
+  /* Custom Button */
+  button, .btn {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #0093CB;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover, .btn:hover {
+    background-color: #0072a8;
+    transform: scale(1.05);
+  }
+  
+  button:focus, .btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 147, 203, 0.3);
+  }
+  .container1{
+    width: 100%;
+    margin-left: 200px;
+    position: relative;
+  }
+
+
+  .leader-1{
+    position: relative;
+    border-radius: 20px;
+    box-shadow: #808181;
+    padding: 40px 20px 20px; /* Added top padding */
+    margin-bottom: 10px;
+     margin-left: 50px;
+    transition: transform 0.3s ease;
+    height: 100%;
+  }
+
+  .leader-1:hover{
+    transform: translate(-10px);
+  }
+  .service-box {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid var(--third-color);
+    border-radius: 10px;
+    padding: 40px 20px 20px; /* Added top padding */
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+    height: 100%;
+  }
+  
+  .service-box h4 {
+    color: #0093CB;
+    margin-bottom: 10px;
+  }
+  
+  .service-box p {
+    color: var(--third-color);
+  }
+  
+  .service-box:hover {
+    transform: translateY(-10px);
+  }
+  
+  .icon-wrapper {
+    position: absolute;
+    top: -30px; /* Adjust position */
+    left: 50%;
+ 
+    transform: translateX(-50%);
+  }
+  
+  .icon-circle {
+    width: 80px;
+    height: 70px;
+    border: 1px solid var(--third-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* Match the background */
+  }
+  
+  .icon-circle img {
+    width: 40px;
+    height: 40px;
+  }
+  
+ 
+  .col-lg-5 .h1{
+    font-size: 2.5rem;
+    color: #0093CB;
+    margin-bottom: 20px;
+    margin-top: auto;
+
+  }
+ /*services*/
+ .service-image{
+  height: 100%;
+  margin-top: 10px;
+  padding: 15px;
+  margin-left: 5px;
+  
+  margin-right: 50px;
+
+ }
+
+/* MAIN IMAGE*/
+  .img-fluid {
+    max-width: 200;
+    height: 200;
+    position: relative;
+
+  }
+/*---------------About Section -------------- */
+.ceo-section {
+  text-align: center;
+  text-shadow: #434343; 
+  color: #0093CB;/* Center the CEO's image and name */
+}
+
+.ceo-image {
+  width: 100%; /* Adjust as per your design requirements */
+  max-width: 250px; /* Limit the maximum width for larger screens */
+  border-radius: 20%; /* Round the image if desired */
+  align-self: flex-end;
+ 
+  position: relative;
+
+}
+
+.message-box {
+  background-color: rgba(220, 220, 220, 0.9); /* Optional: make the message box stand out */
+  padding: 15px;
+  margin-top: -30px; /* Space between the CEO's image and message */
+  margin-bottom: 100px;
+  border-radius: 10px;
+  text-align: center; /* Center text within the message box */
+}
+
+.row.justify-content-center {
+  display: flex;
+  justify-content: center; /* Center the row content */
+}
+
+
+  /*--------------- OUR- APPROACH -------------- */
+
+
+  .main-heading-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: #f1f1f1;
+}
+
+.banner-section {
+    background-color: transparent;
+    padding: 30px 0;
+}
+
+.counter-section {
+  background-color: #f5f5f5;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  padding: 50px 0;
+}
+
+.counter-box {
+  background-color: transparent;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+  height: 100%;   
+ 
+  display: flex;
+  align-items: center;
+}
+
+.icon-bg {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 80px;
+  width: 80px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-bg i {
+  font-size: 1.5rem;
+}
+
+.counter-text h4 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.counter-text p {
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+/*--------------Experties--------------*/
+
+
+
+.experties-section {
+  background-color: #f5f5f5;
+  margin-top: 40px;
+  margin-bottom: 20px;
+   height: 100%;
+  
+  padding: 50px 10px;
+}
+
+.fitness-box {
+  background-color: transparent;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100% ;
+  border: 1px, solid var(--primary-color) ;
+  margin-top: 10px 0;
+  height: 100%;   
+ 
+  display: flex;
+  align-items: center;
+}
+.fitnes-box-main{
+  background-color: transparent;
+  padding: 25px;
+  border-radius: 8px;
+  margin: 10px 0;
+  height: 100%;   
+  align-items: center;
+  display: flex;
+  
+
+}
+
+
+/*--------------Team Section---------*/
+.team-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  background-color: white;
+}
+
+.service-text{
+
+  width: 250px;
+  margin-top: 20px;
+  margin-left: 80px;
+   padding: 15px;
+
+}
+.service_provided-back{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+
+}
+.servixes{
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+
+/*-------Contact Us----------- */
+  
+.form-container {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  background-color: #006080;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+button:hover {
+  background-color: #004d5a;
+}
+
+
+
+/*-------Footer Section--------*/
+
+
+.footer {
+  
+  color: white;
+  padding: 20px 0;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-top: 60px;
+  padding: 14px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+.social-icons span {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footr{
+  width: 100%;
+ 
+  margin-top: 50px;
+}
